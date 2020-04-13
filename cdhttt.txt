@@ -1,0 +1,18 @@
+Cursor:
+- Đặt lệnh mua/ bán
++ Ngày giờ mặt định hệ thống
++ Mã cp
++ Loại lệnh: mặc định LO
++ Số lượng
++ Gía
++ cursor
+
+Denpendency:
+- Tạo db: Mã cp, giá 2, kl2,...
+nếu trong bảng giá trực tuyến trong db có thay đổi số liệu thì ngay lt 
+số liệu này đẩy về bảng giá trực tuyến của các nhà đầu tư
+- khối lượng trên bảng giá trực tuyến là cộng dồn của sl
+- có trigger đặt trong lệnh đặt, khi có sự thay đổi dl thì nó tính toán
+đổ dl vào bảng giá trực tuyến 
+- cursor hổ trợ về đưa khớp lệnh vào bảng lệnh khớp và ghi tiếp giá khớp
++kl khớp của lệnh khớp gần nhất vào bảng giá trực tuyến (db)
